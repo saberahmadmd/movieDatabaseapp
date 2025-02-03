@@ -1,0 +1,227 @@
+.movie-details-container {
+  background: #00050d;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  color: white;
+}
+
+/* Loader Styles */
+.loader-container {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Specific Container for Movie Details */
+.specific-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.specific-img-sm {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.specific-img-lg {
+  display: none;
+  width: 30%;
+  margin-left: 20px;
+  object-fit: cover;
+}
+
+/* Content Container */
+.content-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+.movie-name {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.tag-line {
+  color: rgb(168, 149, 149);
+  font-size: 16px;
+  font-weight: 530;
+  margin-top: 5px;
+}
+
+.description {
+  font-size: 17px;
+  font-weight: 530;
+  color: rgb(216, 209, 209);
+  line-height: 28px;
+  padding-right: 10px;
+  margin-top: 20px;
+}
+
+.language,
+.movie-rating,
+.date {
+  color: rgb(216, 209, 209);
+  font-size: 16px;
+  font-weight: 530;
+  margin-top: 6px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.genre-wrapper {
+  display: flex;
+  align-items: center;
+  color: rgb(216, 209, 209);
+  margin-top: 20px;
+}
+
+.genre-name {
+  margin-right: 10px;
+  font-weight: 520;
+}
+
+.cast-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cast {
+  font-size: 20px;
+  color: #9e9797;
+  font-weight: 520;
+  margin-top: 20px;
+}
+
+/* Media Queries */
+
+/* Mobile View */
+@media screen and (max-width: 767px) {
+  .specific-img-sm {
+    width: 100%;
+    height: 250px; /* Adjust height for mobile */
+  }
+
+  .specific-container {
+    display: block;
+    padding: 15px;
+  }
+
+  .movie-name {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .tag-line {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 15px;
+    margin-top: 15px;
+  }
+
+  .movie-rating,
+  .date,
+  .language {
+    font-size: 14px;
+  }
+
+  .genre-name {
+    font-size: 14px;
+  }
+
+  .cast {
+    font-size: 18px;
+  }
+
+  .genre-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .specific-img-lg {
+    display: none;
+  }
+}
+
+/* Tablet and Desktop View */
+@media screen and (min-width: 768px) {
+  .specific-img-sm {
+    display: none;
+  }
+
+  .specific-img-lg {
+    display: block;
+  }
+
+  .specific-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .movie-name {
+    font-size: 32px;
+    margin-top: 0px;
+  }
+
+  .tag-line {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 20px;
+    padding-right: 26px;
+  }
+
+  .movie-rating,
+  .date,
+  .language {
+    font-size: 18px;
+  }
+
+  .genre-name {
+    font-size: 18px;
+  }
+
+  .cast {
+    font-size: 24px;
+  }
+
+  .wrapper {
+    justify-content: flex-start;
+  }
+}
+
+/* Error Page */
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  color: white;
+  font-size: 18px;
+}
+
+/* Cast Grid Container */
+.casts-container {
+  padding: 20px;
+}
+
+.cast-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}

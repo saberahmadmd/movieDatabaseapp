@@ -1,0 +1,80 @@
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #030f21;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control-btn {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin: 0 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+  background-color: #8b1c15;
+  border-color: #8b1c15;
+}
+
+.page-no {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.total-pages {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .page-no {
+    font-size: 1rem; /* Slightly smaller font for mobile */
+    margin: 5px 0;
+  }
+
+  .control-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .pagination-container {
+    padding: 15px;
+  }
+
+  .control-btn {
+    font-size: 0.8rem; /* Smaller buttons on small devices */
+    padding: 6px 10px;
+  }
+
+  .page-no {
+    font-size: 1rem; /* Adjust page number size for small screens */
+  }
+
+  .total-pages {
+    font-size: 0.9rem; /* Adjust total pages font size */
+  }
+}

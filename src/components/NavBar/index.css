@@ -1,0 +1,182 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #252c3b;
+  color: white;
+}
+
+.logo-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.logo-high {
+  color: rgb(42, 102, 240);
+}
+
+.icon {
+  font-size: 24px;
+}
+
+/* Large screen (desktop and tablet) nav items */
+.nav-items-lg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%; /* Adjust the width for better spacing */
+}
+
+.item-lg {
+  font-size: 16px;
+  font-weight: 530;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-btn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Styles for the mobile menu */
+.menu-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #191e25;
+  margin-top: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-items-sm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.item {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 530;
+  color: white;
+  cursor: pointer;
+}
+
+.route-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.route-icon {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.search-button {
+  background-color: #8b1c15;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-button:hover {
+  background-color: #b93e2b;
+}
+
+/* Media queries for responsiveness */
+
+/* Small screens (mobile) */
+@media screen and (max-width: 767px) {
+  .nav-bar {
+    padding: 10px;
+  }
+
+  .logo-name {
+    font-size: 22px;
+    margin-left: 10px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-items-lg {
+    display: none;
+  }
+
+  .search-bar-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .search-bar-container input {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+}
+
+/* Large screens (tablet, desktop) */
+@media screen and (min-width: 768px) {
+  .nav-items-lg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  .menu-div {
+    display: none;
+  }
+
+  .nav-items-lg .item-lg {
+    margin: 0 20px;
+  }
+
+  .logo-name {
+    font-size: 24px;
+    padding-left: 15px;
+  }
+
+  .search-bar-container {
+    display: flex;
+    margin-top: 0;
+  }
+}
